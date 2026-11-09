@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--PAGE ICON-->
+    <link rel="icon" href="https://i.imgur.com/GfJn9uo.gif" />
+
+    <title>Let's make Pizza! ⸜(｡˃ ᵕ ˂ )⸝♡</title>
+
+    <!--LINK HTML TO CSS -->
+    <link rel="stylesheet" href="start.css" />
+
+    <!--CURSOR STYLE-->
+    <style>
+      /* Mushroom - https://www.cursors-4u.com/cursor/mushroom-3 */
+      * {
+        cursor:
+          url("https://cdn.cursors-4u.net/previews/mushroom-d5046410-32.webp")
+            32 32,
+          auto !important;
+      }
+      /* End www.Cursors-4U.com Code */
+    </style>
+
+    <!--IMPORT FREDOKA FONT for buttons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+
+
+
+
+    <!--BODY-->
+    <body>
+
+      <!--HEADER CONTAINER-------------------------------------------------->
+      <div class="header-container">
+
+        <!--HEADER-->
+        <div class="header">
+
+          <!--HEADER LEFT RIBBON-->
+          <div class="left-ribbon">
+            <img src="https://graphic.neocities.org/tumblr_llsv6mqKJn1qg9aa7.gif" 
+                 id="left-ribbon"/>
+          </div>
+
+
+          <!--HEADER TITLE-->
+          <div class="header-title">
+
+            <!--SLICE 1-->
+            <span>
+            <img src="https://text.glitter-graphics.net/crl/s.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/l.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/i.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/c.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/e.gif" border=0>
+            </span>
+
+
+            <!--SLICE 2-->
+            <span>
+            <img src="https://text.glitter-graphics.net/crl/s.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/l.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/i.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/c.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/e.gif" border=0>
+            </span>
+
+
+            <!--BABY-->
+            <span>
+            <img src="https://text.glitter-graphics.net/crl/b.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/a.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/b.gif" border=0>
+            <img src="https://text.glitter-graphics.net/crl/y.gif" border=0>
+            </span>
+          </div>
+
+
+          <!--HEADER RIGHT RIBBON-->
+          <div class="right-ribbon">
+            <img src="https://graphic.neocities.org/tumblr_llsv6mqKJn1qg9aa7.gif" 
+                 id="right-ribbon"/>
+          </div>
+          
+        </div>
+
+      </div>
+
+      
+        
+      <!--BANNER CONTAINER-------------------------------------->
+      <div class="banner-container">
+        <!-- BANNER -->
+        <div class="banner">
+
+
+
+          <!-- BANNER BACK BUTTON -->  
+          <div class="back-button">
+            <a href="../index.html">
+              <button class="button">
+                <img src="./Images/back-button.png" alt="back button" />
+              </button>
+            </a>
+          </div>
+
+
+
+          <!-- BANNER TEXT -->          
+          <div class="banner-text"> 
+               ◝(ᵔᗜᵔ)◜ Time to create your own slice of heaven! ◝(ᵔᗜᵔ)◜ 
+          </div>
+
+
+
+          <!-- BANNER DARK MODE-->  
+          <div class="dark-mode">
+              <button class="button" id="darkModeToggle" onclick="toggleDarkMode()">
+                <img id="light-mode-icon" src="https://i.imgur.com/MqiXvqh.gif" alt="Light Mode Switch" />
+              </button>
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+      <!--MAIN CONTAINER-------------------------------------->
+      <div class="main-container">
+        <!--MAIN BOX-->
+        <div class="main">
+
+          <!--PIZZA CONTAINER-->
+          <div class="pizza-container"> 
+            <!--PIZZA-->
+            <div class="pizza">
+
+              <!--LAYER 1 PLATE-->
+              <img src="./Images/plate1.png" 
+                  alt="plate" 
+                  id="plate-layer"
+                  class="pizza-layer plate-hidden">
+
+
+              <!--LAYER 2 SAUCE-->
+              <img src="./Images/sauce-default.png"    
+                  alt="sauce"
+                  id="pizza-base"
+                  class="pizza-layer">
+
+
+              <!--LAYER 3 TOPPINGS-->
+              <img src="./Images/topping-mushroom.png"
+                  alt="mushrooms"
+                  id="topping-mushroom"
+                  class="pizza-layer topping-hidden">
+
+              <img src="./Images/topping-parsley.png"
+                  alt="parsley"
+                  id="topping-parsley"
+                  class="pizza-layer topping-hidden">
+
+              <img src="./Images/topping-peperoni.png"
+                  alt="peperonis"
+                  id="topping-peperoni"
+                  class="pizza-layer topping-hidden">
+            </div>
+
+          </div>
+
+
+
+
+
+          <!--MENU CONTAINER-->
+          <div class="menu-container">
+            <!--MENU-->
+            <div class="menu">
+
+              <button class="nav-btn" onclick="openMenu('plate')"> PLATE </button>
+              <button class="nav-btn" onclick="openMenu('sauce')"> SAUCE </button>
+              <button class="nav-btn" onclick="openMenu('toppings')"> TOPPINGS </button> 
+
+              <button class="nav-btn done-btn" onclick="finishPizza()"> DONE </button>
+            </div>
+
+            
+            <!--MENU DRAWER-->
+            <div id="menu-drawer" class="menu-drawer drawer-hidden">
+
+              <!--ITEMS INSIDE DRAWER-->
+              <div id="drawer-items" class="drawer-items"></div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+          <!--MUSIC CONTAINER-->
+          <div class="song-container">
+            <div class="music" onclick="toggleMusic()">
+
+              <img src="./Images/music-icon-dark.png" 
+                  alt="Music Icon"
+                  id="music-icon"
+                  class="music-icon">
+
+            </div>
+
+          </div>  
+
+          <!--MUSIC-->
+          <audio id="doodle-music" src="./Images/Doodle.mp3" loop></audio>
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--LINK JS TO HTML-->
+    <script src="start.js" defer></script>  
+    </body>
+</html>
