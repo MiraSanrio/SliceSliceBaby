@@ -317,17 +317,6 @@ body {
 }
 
 
-
-/* DONE BUTTON */
-.nav-btn.nav-btn.done-btn:hover {
-  background: linear-gradient(180deg, #a2ff5b 0%, #5a8e00 100%);
-  color: #fff5e4;
-  transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 12px 20px rgba(147, 255, 58, 0.3);
-}
-
-
-
 /* MENU BUTTONS */
 .nav-btn {
   background: linear-gradient(180deg, rgb(124, 92, 59) 0%, #432301 100%);
@@ -503,15 +492,6 @@ body.dark-theme .main-container {
 /* MAIN */
 body.dark-theme .main {
   background-color: #050210;
-}
-
-
-/* DONE BUTTON */
-
-
-body.dark-theme .nav-btn.nav-btn.done-btn:hover {
-  background: linear-gradient(180deg, #a2ff5b 0%, #5a8e00 100%);
-  color: #fff5e4;
 }
 
 
